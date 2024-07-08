@@ -1,0 +1,22 @@
+<div class="card bg-secondary w-96 shadow-xl max-h-64 px-4 py-4">
+  <figure>
+    <img
+      [src]="url()"
+      width="120"
+      height="200"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">
+      {{nombre()}}
+      <div class="badge badge-accent">$ {{precio()}}</div>
+
+    </h2>
+    <p class="text-sm  text-black">
+      En stock: {{stock()}}
+    </p>
+    <div class="card-actions justify-end">
+      <div class="badge badge-outline">{{categoria()}} </div>
+    </div>
+  </div>
+</div>
